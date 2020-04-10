@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon test Suite">
+
+	<listeners>
+		<listener class-name="listener.CustomListeners"/>		 
+		
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+	</listeners>
+ 
+	<test name="SignInTest">
+		<classes>			
+			<class name="testcases.SignInTest" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="CreateAccounttest">
+		<classes>
+			<class name="testcases.CreateAccountTest" />
+			
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
