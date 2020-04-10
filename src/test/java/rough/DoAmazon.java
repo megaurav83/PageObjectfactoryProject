@@ -72,6 +72,8 @@ public class DoAmazon {
 		DoAmazon t = new DoAmazon();
 		t.signIn();
 		t.createAccount();
+		
+		System.out.println("Adding the code to Git");
 	}
 
 }
