@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="129" started-at="2020-04-11T11:28:39Z" finished-at="2020-04-11T11:28:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="129" started-at="2020-04-11T11:28:39Z" finished-at="2020-04-11T11:28:39Z">
+      <class name="rough.DoAmazon">
+        <test-method status="PASS" signature="doAmazon(java.util.Hashtable)[pri:0, instance:rough.DoAmazon@aa0244]" name="doAmazon" duration-ms="15" started-at="2020-04-11T11:28:39Z" data-provider="dp1" finished-at="2020-04-11T11:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Selenium@123, runmode=y, username=9.899894877E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAmazon -->
+        <test-method status="PASS" signature="doAmazon(java.util.Hashtable)[pri:0, instance:rough.DoAmazon@aa0244]" name="doAmazon" duration-ms="3" started-at="2020-04-11T11:28:39Z" data-provider="dp1" finished-at="2020-04-11T11:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Selenium@123, runmode=y, username=9.989984876E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAmazon -->
+      </class> <!-- rough.DoAmazon -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

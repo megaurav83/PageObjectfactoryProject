@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AmazonTest]">
+  <test thread-count="5" name="SignInTest(failed)">
+    <classes>
+      <class name="testcases.SignInTest">
+        <methods>
+          <include name="signInTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testcases.SignInTest -->
+    </classes>
+  </test> <!-- SignInTest(failed) -->
+</suite> <!-- Failed suite [AmazonTest] -->

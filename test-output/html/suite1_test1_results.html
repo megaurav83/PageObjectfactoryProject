@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - SignInTest</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>SignInTest</h1>
+<p>
+  Test duration: 63.453s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testcases.SignInTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  signInTest
+      </td>
+  <td class="duration">
+    27.106s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{password=Selenium@123, runmode=y, username=9.899894877E9}</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a href=D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_07_IST_2020.jpg target="_blank">Screenshot Link</a>
+                                <br>
+                                <a href="D:\Selenium Program2\ExtentReport\target\surefire-reports\html\"Thu_Apr_09_22_07_07_IST_2020.jpg target="_blank"><img height=200 width=200 src =D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_07_IST_2020.jpg ></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+              com.sun.proxy.$Proxy10.sendKeys(Unknown Source)<br />
+              base.Page.type(Page.java:122)<br />
+              actions.SignInPage.doLogin(SignInPage.java:25)<br />
+              testcases.SignInTest.signInTest(SignInTest.java:30)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}<br/>
+&nbsp; (Session info: chrome=80.0.3987.163)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 48e88876b0dd4542c5146598ca0f88cd<br/>
+*** Element info: {Using=css selector, value=input#ap_password}</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)<br />
+                      org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)<br />
+                      org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+                      com.sun.proxy.$Proxy10.sendKeys(Unknown Source)<br />
+                      base.Page.type(Page.java:122)<br />
+                      actions.SignInPage.doLogin(SignInPage.java:25)<br />
+                      testcases.SignInTest.signInTest(SignInTest.java:30)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  signInTest
+      </td>
+  <td class="duration">
+    36.347s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{password=Selenium@123, runmode=y, username=9.989984876E9}</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a href=D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_44_IST_2020.jpg target="_blank">Screenshot Link</a>
+                                <br>
+                                <a href="D:\Selenium Program2\ExtentReport\target\surefire-reports\html\"Thu_Apr_09_22_07_44_IST_2020.jpg target="_blank"><img height=200 width=200 src =D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_44_IST_2020.jpg ></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+              com.sun.proxy.$Proxy10.sendKeys(Unknown Source)<br />
+              base.Page.type(Page.java:122)<br />
+              actions.SignInPage.doLogin(SignInPage.java:25)<br />
+              testcases.SignInTest.signInTest(SignInTest.java:30)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}<br/>
+&nbsp; (Session info: chrome=80.0.3987.163)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: dfce148bfb25d777b41d9946f9f296f3<br/>
+*** Element info: {Using=css selector, value=input#ap_password}</a><br />
+        <div class="stackTrace" id="exception-3">
+                      sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)<br />
+                      org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)<br />
+                      org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)<br />
+                      org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br />
+                      com.sun.proxy.$Proxy10.sendKeys(Unknown Source)<br />
+                      base.Page.type(Page.java:122)<br />
+                      actions.SignInPage.doLogin(SignInPage.java:25)<br />
+                      testcases.SignInTest.signInTest(SignInTest.java:30)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>
