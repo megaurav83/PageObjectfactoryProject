@@ -1,18 +1,52 @@
 package rough;
 
+import java.lang.reflect.Method;
+import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
+import base.Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DoAmazon {
+public class DoAmazon extends Page {
 
-	public static WebDriver driver;
+	public static WebDriver driver; 
+	
+	
+	
+	@DataProvider(name = "dp1")
+	public Object[][] getData(Method m) {
+
+		String sheetName = m.getName();
+		int rows = excel.getRowCount(sheetName);
+		int cols = excel.getColumnCount(sheetName);
+
+		Object[][] data = new Object[rows - 1][1];
+
+		Hashtable<String, String> table = null;
+
+		for (int rowNum = 2; rowNum <= rows; rowNum++) { // 2
+
+			table = new Hashtable<String, String>();
+
+			for (int colNum = 0; colNum < cols; colNum++) {
+
+				// data[0][0]
+				table.put(excel.getCellData(sheetName, colNum, 1), excel.getCellData(sheetName, colNum, rowNum));
+				data[rowNum - 2][0] = table;
+			}
+
+		}
+		return data;
+	}
+
+	
 
 	public static void initConfig() {
 		WebDriverManager.chromedriver().setup();
@@ -27,7 +61,7 @@ public class DoAmazon {
 		driver.quit();
 	}
 
-	public void signIn() {
+	public static void signIn() {
 		initConfig();
 		WebElement signInBlock = driver.findElement(By.cssSelector("a#nav-link-accountList.nav-a.nav-a-2"));
 		WebElement signInbtn = driver.findElement(
@@ -44,7 +78,7 @@ public class DoAmazon {
 		quitBrowser();
 	}
 
-	public void createAccount() {
+	public static void createAccount() {
 		initConfig();
 
 		WebElement signInBlock = driver.findElement(By.cssSelector("a#nav-link-accountList.nav-a.nav-a-2"));
@@ -66,12 +100,12 @@ public class DoAmazon {
 		continueBtn.click();
 		quitBrowser();
 	}
+	@Test(dataProvider="dp1")
+	public void doAmazon(Hashtable<String,String> data) {
 
-	public static void main(String[] args) {
-
-		DoAmazon t = new DoAmazon();
-		t.signIn();
-		t.createAccount();
+		System.out.println(data.get("username"));
+		System.out.println(data.get("password"));
+		
 		
 		System.out.println("Adding the code to Git");
 	}
