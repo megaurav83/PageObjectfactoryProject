@@ -3,15 +3,17 @@
 <suite name="Amazon test Suite">
 
 	<listeners>
-		<listener class-name="listener.CustomListeners"/>		 
-		
-			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="listener.CustomListeners" />
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<!-- <listener class-name="listener.RetryListener" /> -->
 
 	</listeners>
- 
+
 	<test name="SignInTest">
-		<classes>			
+		<classes>
 			<class name="testcases.SignInTest" />
+			
 
 		</classes>
 	</test> <!-- Test -->
@@ -19,7 +21,8 @@
 	<test name="CreateAccounttest">
 		<classes>
 			<class name="testcases.CreateAccountTest" />
-			
+			<class name="testcases.RetryTestCase" />
+
 		</classes>
 	</test> <!-- Test -->
 

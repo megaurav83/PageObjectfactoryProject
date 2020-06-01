@@ -9,12 +9,16 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -33,8 +37,8 @@ public class Page {
 	public static Properties p = new Properties();
 	public static FileInputStream fis;
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") +"\\src\\test\\resources\\excel\\testdata.xlsx");
-	public static ExtentReports rep = ExtentManager.getInstance();
-	public static ExtentTest test;
+	
+	/*public static WebDriverWait wait = new WebDriverWait(driver,10);*/
 	public static void initConfiguration() {
 
 		setLogPropertiesPath();
@@ -68,8 +72,7 @@ public class Page {
 			prefs.put("profile.password_manager_enabled", false);
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
-			options.addArguments("--disable-extensions");
-			options.addArguments("--disable-infobars");
+			
 
 			driver = new ChromeDriver(options);
 
@@ -86,6 +89,7 @@ public class Page {
 		}
 
 		driver.get("https://www.amazon.in");
+		
 		log.info("navigating to test site");
 		driver.manage().window().maximize();
 		/* driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); */
@@ -113,14 +117,42 @@ public class Page {
 
 	public static void click(WebElement element) {
 
+		
+
 		element.click();
 
 	}
 
 	public static void type(WebElement element, String value) {
+		
 
 		element.sendKeys(value);
 
 	}
+	
+	
+	@SuppressWarnings("finally")
+	public static WebElement findElement(String locator, int time){
+		
+		WebElement element = null;
+			try{
+				element = driver.findElement(By.xpath(locator));
+			}catch(Throwable t) {
+				for(int i=0;i<time;i++){
+					element = driver.findElement(By.xpath(locator));
+					Thread.sleep(2000);
+				}
+			}finally{
+				return element;
+					}
+		
+						
+			}
+			
+			
+		
+		
+	
 
 }
+

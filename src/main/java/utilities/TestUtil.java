@@ -18,7 +18,7 @@ public class TestUtil extends Page {
 	public static String screenshotPath;
 	public static String screenshotName;
 
-	public static void captureScreenshot() throws IOException {
+	public static String captureScreenshot() throws IOException {
 
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
@@ -29,6 +29,7 @@ public class TestUtil extends Page {
 		
 		FileUtils.copyFile(scrFile,
 				new File(screenshotPath));
+		return screenshotPath;
 
 	}
 
@@ -36,6 +37,7 @@ public class TestUtil extends Page {
 	public Object[][] getData(Method m) {
 
 		String sheetName = m.getName();
+		System.out.println(sheetName);
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
 
