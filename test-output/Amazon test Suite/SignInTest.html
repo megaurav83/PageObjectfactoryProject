@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 09 22:06:39 IST 2020</td>
+<td>Started on:</td><td>Tue Jun 02 01:39:55 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65133 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55849 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,32 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.SignInTest.signInTest()'><b>signInTest</b><br>Test class: testcases.SignInTest<br>Parameters: {password=Selenium@123, runmode=y, username=9.899894877E9}<br/>
-<a href="#Output-4684168" onClick='toggleBox("Output-4684168", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-4684168" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-4684168">
-Click to see Screenshot<br/>
-<a href=D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_07_IST_2020.jpg target="_blank">Screenshot Link</a><br/>
-<br><br/>
-<a href="D:\Selenium Program2\ExtentReport\target\surefire-reports\html\"Thu_Apr_09_22_07_07_IST_2020.jpg target="_blank"><img height=200 width=200 src =D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_07_IST_2020.jpg ></a><br/>
-</div>
-</td>
+<td title='testcases.SignInTest.signInTest()'><b>signInTest</b><br>Test class: testcases.SignInTest<br>Parameters: {password=Selenium@123, runmode=y, username=9.899894877E9}</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:122)
+	at base.Page.type(Page.java:129)
 	at actions.SignInPage.doLogin(SignInPage.java:25)
-	at testcases.SignInTest.signInTest(SignInTest.java:30)
+	at testcases.SignInTest.signInTest(SignInTest.java:33)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=80.0.3987.163)
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 48e88876b0dd4542c5146598ca0f88cd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 241bc15f22145b7e37cf700621b071af
 *** Element info: {Using=css selector, value=input#ap_password}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -118,18 +108,18 @@ Session ID: 48e88876b0dd4542c5146598ca0f88cd
 	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
 	... 30 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4684168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace4684168'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6861673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6861673'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:122)
+	at base.Page.type(Page.java:129)
 	at actions.SignInPage.doLogin(SignInPage.java:25)
-	at testcases.SignInTest.signInTest(SignInTest.java:30)
+	at testcases.SignInTest.signInTest(SignInTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -152,17 +142,17 @@ Session ID: 48e88876b0dd4542c5146598ca0f88cd
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=80.0.3987.163)
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 48e88876b0dd4542c5146598ca0f88cd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 241bc15f22145b7e37cf700621b071af
 *** Element info: {Using=css selector, value=input#ap_password}
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -180,35 +170,25 @@ Session ID: 48e88876b0dd4542c5146598ca0f88cd
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
 	... 30 more
 </pre></div></td>
-<td>27</td>
-<td>testcases.SignInTest@11da57d</td></tr>
+<td>23</td>
+<td>testcases.SignInTest@11bf055</td></tr>
 <tr>
-<td title='testcases.SignInTest.signInTest()'><b>signInTest</b><br>Test class: testcases.SignInTest<br>Parameters: {password=Selenium@123, runmode=y, username=9.989984876E9}<br/>
-<a href="#Output-27916067" onClick='toggleBox("Output-27916067", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-27916067" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-27916067">
-Click to see Screenshot<br/>
-<a href=D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_44_IST_2020.jpg target="_blank">Screenshot Link</a><br/>
-<br><br/>
-<a href="D:\Selenium Program2\ExtentReport\target\surefire-reports\html\"Thu_Apr_09_22_07_44_IST_2020.jpg target="_blank"><img height=200 width=200 src =D:\Selenium Program2\ExtentReport\target\surefire-reports\html\Thu_Apr_09_22_07_44_IST_2020.jpg ></a><br/>
-</div>
-</td>
+<td title='testcases.SignInTest.signInTest()'><b>signInTest</b><br>Test class: testcases.SignInTest<br>Parameters: {password=Selenium@123, runmode=y, username=9.989984876E9}</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:122)
+	at base.Page.type(Page.java:129)
 	at actions.SignInPage.doLogin(SignInPage.java:25)
-	at testcases.SignInTest.signInTest(SignInTest.java:30)
+	at testcases.SignInTest.signInTest(SignInTest.java:33)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=80.0.3987.163)
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dfce148bfb25d777b41d9946f9f296f3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f41883942c342abc12476d0eda7f47bd
 *** Element info: {Using=css selector, value=input#ap_password}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -226,18 +206,18 @@ Session ID: dfce148bfb25d777b41d9946f9f296f3
 	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
 	... 30 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27916067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace27916067'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14482770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14482770'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:122)
+	at base.Page.type(Page.java:129)
 	at actions.SignInPage.doLogin(SignInPage.java:25)
-	at testcases.SignInTest.signInTest(SignInTest.java:30)
+	at testcases.SignInTest.signInTest(SignInTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -260,17 +240,17 @@ Session ID: dfce148bfb25d777b41d9946f9f296f3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=80.0.3987.163)
+  (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dfce148bfb25d777b41d9946f9f296f3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f41883942c342abc12476d0eda7f47bd
 *** Element info: {Using=css selector, value=input#ap_password}
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -288,8 +268,8 @@ Session ID: dfce148bfb25d777b41d9946f9f296f3
 	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
 	... 30 more
 </pre></div></td>
-<td>36</td>
-<td>testcases.SignInTest@11da57d</td></tr>
+<td>30</td>
+<td>testcases.SignInTest@11bf055</td></tr>
 </table><p>
 </body>
 </html>

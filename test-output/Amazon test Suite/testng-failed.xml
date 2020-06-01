@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon test Suite]">
-  <listeners>
-    <listener class-name="listener.CustomListeners"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
   <test thread-count="5" name="SignInTest(failed)">
     <classes>
       <class name="testcases.SignInTest">
@@ -14,4 +10,13 @@
       </class> <!-- testcases.SignInTest -->
     </classes>
   </test> <!-- SignInTest(failed) -->
+  <test thread-count="5" name="CreateAccounttest(failed)">
+    <classes>
+      <class name="testcases.RetryTestCase">
+        <methods>
+          <include name="retryMechanism"/>
+        </methods>
+      </class> <!-- testcases.RetryTestCase -->
+    </classes>
+  </test> <!-- CreateAccounttest(failed) -->
 </suite> <!-- Failed suite [Amazon test Suite] -->

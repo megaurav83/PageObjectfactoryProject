@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rough.DoAmazon">
+      <class name="testcases.RetryTestCase">
         <methods>
-          <include name="doAmazon"/>
+          <include name="retryMechanism"/>
         </methods>
-      </class> <!-- rough.DoAmazon -->
+      </class> <!-- testcases.RetryTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
