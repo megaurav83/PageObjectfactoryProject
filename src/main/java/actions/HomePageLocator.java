@@ -9,7 +9,7 @@ public class HomePageLocator {
 	
 	
 	
-	@FindBy(css="div#nav-signin-tooltip > a>span[class='nav-action-inner']")		
+	@FindBy(css="div[id*='nav-signin-tooltip'] > a>span.nav-action-inner")		
 	public WebElement signInbtn;
 	
 	

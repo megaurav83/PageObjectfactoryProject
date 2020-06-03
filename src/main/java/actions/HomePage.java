@@ -12,7 +12,7 @@ public class HomePage extends Page {
 public HomePage() {
 		
 		this.home= new HomePageLocator();
-		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);		
+		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 20);		
 		PageFactory.initElements(factory, this.home);
 
 	}

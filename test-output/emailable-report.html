@@ -9,95 +9,99 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Amazon test Suite</th></tr>
-<tr><td><a href="#t0">SignInTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">101,246</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">CreateAccounttest</a></td><td class="num">2</td><td class="num attn">4</td><td class="num attn">1</td><td class="num">65,202</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">4</th><th class="num attn">3</th><th class="num">166,448</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">SignInTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">24,371</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">CreateAccounttest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">48,237</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">72,608</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SignInTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.SignInTest</td><td><a href="#m0">signInTest</a></td><td rowspan="2">1588868153741</td><td rowspan="2">61653</td></tr><tr class="failedeven"><td><a href="#m1">signInTest</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">CreateAccounttest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.RetryTestCase</td><td><a href="#m2">retryMechanism</a></td><td rowspan="1">1588868319602</td><td rowspan="1">1</td></tr><tr><th colspan="4">CreateAccounttest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">testcases.RetryTestCase</td><td><a href="#m3">retryMechanism</a></td><td rowspan="4">1588868319570</td><td rowspan="4">15</td></tr><tr class="skippedeven"><td><a href="#m4">retryMechanism</a></td></tr><tr class="skippedeven"><td><a href="#m5">retryMechanism</a></td></tr><tr class="skippedeven"><td><a href="#m6">retryMechanism</a></td></tr><tr><th colspan="4">CreateAccounttest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.CreateAccountTest</td><td><a href="#m7">createAccountTest</a></td><td rowspan="2">1588868254411</td><td rowspan="2">21341</td></tr><tr class="passedeven"><td><a href="#m8">createAccountTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SignInTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.SignInTest</td><td><a href="#m0">signInTest</a></td><td rowspan="2">1591170559883</td><td rowspan="2">11814</td></tr><tr class="failedeven"><td><a href="#m1">signInTest</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">CreateAccounttest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.CreateAccountTest</td><td><a href="#m2">createAccountTest</a></td><td rowspan="2">1591170585665</td><td rowspan="2">10925</td></tr><tr class="failedeven"><td><a href="#m3">createAccountTest</a></td></tr><tr class="failedodd"><td rowspan="1">testcases.RetryTestCase</td><td><a href="#m4">retryMechanism</a></td><td rowspan="1">1591170633036</td><td rowspan="1">12</td></tr></tbody>
 </table>
-<h2>SignInTest</h2><h3 id="m0">testcases.SignInTest#signInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Selenium@123, runmode=y, username=9.899894877E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:130)
-	at actions.SignInPage.doLogin(SignInPage.java:25)
-	at testcases.SignInTest.signInTest(SignInTest.java:33)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<h2>SignInTest</h2><h3 id="m0">testcases.SignInTest#signInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Selenium@123, runmode=y, username=9.899894877E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.61)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c4792f63ef8cdb6a390c28081383e904
-*** Element info: {Using=css selector, value=input#ap_password}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e06b2b1c83a421f62e094b7c4759c178
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
-	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.SignInTest#signInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Selenium@123, runmode=y, username=9.989984876E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Timed out after 10 seconds. Unable to locate the element
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-	at base.Page.type(Page.java:130)
-	at actions.SignInPage.doLogin(SignInPage.java:25)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at base.Page.click(Page.java:116)
+	at actions.HomePage.goToSignInPage(HomePage.java:28)
 	at testcases.SignInTest.signInTest(SignInTest.java:33)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#ap_password&quot;}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.SignInTest#signInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Selenium@123, runmode=y, username=9.989984876E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.61)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 14c74649b829379f90560ba4ab709d87
-*** Element info: {Using=css selector, value=input#ap_password}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dd809d96c14a7b2f4ea53e13cdd58746
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
-	... 30 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>CreateAccounttest</h2><h3 id="m2">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20] but found [10]
-	at testcases.RetryTestCase.retryMechanism(RetryTestCase.java:16)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20] but found [10]
-	at testcases.RetryTestCase.retryMechanism(RetryTestCase.java:16)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20] but found [10]
-	at testcases.RetryTestCase.retryMechanism(RetryTestCase.java:16)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20] but found [10]
-	at testcases.RetryTestCase.retryMechanism(RetryTestCase.java:16)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20] but found [10]
-	at testcases.RetryTestCase.retryMechanism(RetryTestCase.java:16)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testcases.CreateAccountTest#createAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{eMail=gaurav83.eoi@gmail.com, MobNo=9.910101011E9, Pwd=EOI@123, runmode=y, userName=meAaron21}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testcases.CreateAccountTest#createAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{eMail=gaurav84.eoi@gmail.com, MobNo=9.910101012E9, Pwd=EOI@234, runmode=y, userName=meAaron22}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at base.Page.click(Page.java:116)
+	at actions.HomePage.goToSignInPage(HomePage.java:28)
+	at testcases.SignInTest.signInTest(SignInTest.java:33)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CreateAccounttest</h2><h3 id="m2">testcases.CreateAccountTest#createAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{eMail=gaurav83.eoi@gmail.com, MobNo=9.910101011E9, Pwd=EOI@123, runmode=y, userName=meAaron21}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52528}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 74e3f8dc50b98d35b41fc97bb20330e4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at base.Page.click(Page.java:116)
+	at actions.HomePage.goToSignInPage(HomePage.java:28)
+	at testcases.CreateAccountTest.createAccountTest(CreateAccountTest.java:30)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.CreateAccountTest#createAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{eMail=gaurav84.eoi@gmail.com, MobNo=9.910101012E9, Pwd=EOI@234, runmode=y, userName=meAaron22}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TOSHIBA-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0ce7608db2ed633b07dbaaf5f3f7e78a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at base.Page.click(Page.java:116)
+	at actions.HomePage.goToSignInPage(HomePage.java:28)
+	at testcases.CreateAccountTest.createAccountTest(CreateAccountTest.java:30)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.RetryTestCase#retryMechanism</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at listener.CustomListeners.onTestSkipped(CustomListeners.java:102)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

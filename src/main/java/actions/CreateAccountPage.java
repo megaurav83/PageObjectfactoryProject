@@ -24,7 +24,7 @@ public class CreateAccountPage extends Page {
 		
 	}
 	
-	@Test(dataProviderClass=TestUtil.class,dataProvider="dp")
+	
 	public void createAccount(Hashtable<String,String>data){
 		
 		
