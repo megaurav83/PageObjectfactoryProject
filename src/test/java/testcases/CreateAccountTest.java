@@ -27,7 +27,7 @@ public class CreateAccountTest {
 		}
 		Page.initConfiguration();
 		HomePage home = new HomePage();		
-		home.goToSignInPage().goToCreateAccountPage().createAccount(data.get("userName"), data.get("MobNo"),data.get("eMail"),data.get("Pwd"));
+		home.goToSignInPage().goToCreateAccountPage().createAccount(data);
 		Page.quitBrowser();
 	}
 

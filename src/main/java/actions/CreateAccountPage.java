@@ -1,9 +1,13 @@
 package actions;
 
+import java.util.Hashtable;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.testng.annotations.Test;
 
 import base.Page;
+import utilities.TestUtil;
 
 
 
@@ -20,15 +24,16 @@ public class CreateAccountPage extends Page {
 		
 	}
 	
-	
-	public void createAccount(String userName, String MobNo, String eMail,String Pwd){
+	@Test(dataProviderClass=TestUtil.class,dataProvider="dp")
+	public void createAccount(Hashtable<String,String>data){
 		
 		
-		type(CreateAccount.custName,userName);
-		type(CreateAccount.mobNumber,MobNo);
-		type(CreateAccount.eMailCreateAccount,eMail);
-		type(CreateAccount.passWord,Pwd);
+		type(CreateAccount.custName,data.get("userName"));
+		type(CreateAccount.mobNumber,data.get("MobNo"));
+		type(CreateAccount.eMailCreateAccount,data.get("eMail"));
+		type(CreateAccount.passWord,data.get("Pwd"));
 		click(CreateAccount.continueBtn);
+		
 		
 	}
 
